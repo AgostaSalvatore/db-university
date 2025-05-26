@@ -1,5 +1,9 @@
 1- Selezionare tutti gli studenti nati nel 1990
 
+select *
+from `students`
+where `date_of_birth` like '1990%'
+
 55	4	Lauro	Vitale	1990-01-30	BWOQAH56L35A201P	2018-10-22	620087	baldassarre.mancini@dangelo.com
 86	12	Matilde	Ruggiero	1990-11-17	UIFHBM73Q42E973M	2021-02-14	620118	mariagiulia18@gmail.com
 217	16	Marieva	Mariani	1990-08-30	CRKYAI63Z72H930S	2020-12-13	620249	wgrassi@mariani.net
