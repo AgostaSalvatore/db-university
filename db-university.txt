@@ -2126,4 +2126,12 @@ where phone is null
 93	Kociss	Sanna		fiorentino85@rossetti.net	Rotonda Martinelli 309	152
 97	Marina	Pellegrini		deborah03@villa.net	Strada Vitali 8 Piano 0	97
 98	Cristyn	Martinelli		nicoletta67@longo.com	Contrada Amato 58 Piano 2	1
-						
+
+
+OR
+
+select count(*)
+from `teachers`
+where `phone` is null
+
+50
