@@ -91,3 +91,29 @@ where `degrees`.`level` = 'magistrale' and `departments`.`name` = 'Neuroscienze'
 id|department_id|name                                                         |level     |address        |email                                 |website                                   |id|name                        |address                         |phone            |email              |website                |head_of_department|
 --+-------------+-------------------------------------------------------------+----------+---------------+--------------------------------------+------------------------------------------+--+----------------------------+--------------------------------+-----------------+-------------------+-----------------------+------------------+
 44|            7|Corso di Laurea Magistrale in Odontoiatria e Protesi Dentaria|magistrale|Via Mariani 185|odontoiatria-e-protesi-dentaria@uni.it|www.odontoiatria-e-protesi-dentaria.uni.it| 7|Dipartimento di Neuroscienze|Borgo Ubaldo 181 Appartamento 41|+32 6290 01889948|neuroscienze@uni.it|www.neuroscienze.uni.it|Dante Lombardi    |
+
+
+
+----------------------------------------------------------------------------------------------------------------
+
+3- Selezionare tutti i corsi in cui insegna Fulvio Amato (id=44)
+
+
+select *
+from `teachers`
+join `course_teacher` on `teacher_id` = `teachers`.`id`
+where `teachers`.`id` = 44
+
+id|name  |surname|phone|email              |office_address     |office_number|course_id|teacher_id|
+--+------+-------+-----+-------------------+-------------------+-------------+---------+----------+
+44|Fulvio|Amato  |     |ubianco@bellini.com|Strada Lombardi 855|78           |       23|        44|
+44|Fulvio|Amato  |     |ubianco@bellini.com|Strada Lombardi 855|78           |      155|        44|
+44|Fulvio|Amato  |     |ubianco@bellini.com|Strada Lombardi 855|78           |      170|        44|
+44|Fulvio|Amato  |     |ubianco@bellini.com|Strada Lombardi 855|78           |      251|        44|
+44|Fulvio|Amato  |     |ubianco@bellini.com|Strada Lombardi 855|78           |      489|        44|
+44|Fulvio|Amato  |     |ubianco@bellini.com|Strada Lombardi 855|78           |      601|        44|
+44|Fulvio|Amato  |     |ubianco@bellini.com|Strada Lombardi 855|78           |      725|        44|
+44|Fulvio|Amato  |     |ubianco@bellini.com|Strada Lombardi 855|78           |      766|        44|
+44|Fulvio|Amato  |     |ubianco@bellini.com|Strada Lombardi 855|78           |     1016|        44|
+44|Fulvio|Amato  |     |ubianco@bellini.com|Strada Lombardi 855|78           |     1017|        44|
+44|Fulvio|Amato  |     |ubianco@bellini.com|Strada Lombardi 855|78           |     1259|        44|
